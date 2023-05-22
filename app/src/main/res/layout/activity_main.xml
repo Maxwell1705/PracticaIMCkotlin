@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/lblTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rotationX="-360"
+            android:text="             CALCULADORA IMC"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/lblAltura"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Ingrese su altura (cm):"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtAltura"
+            android:layout_width="168dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center|center_vertical"
+            android:fadingEdge="horizontal"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:hint="Altura"
+            android:inputType="numberDecimal"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/lblPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:text="Ingrese su peso (kg):"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtPeso"
+            android:layout_width="187dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:hint="Peso"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/lblIMC"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:text="Su IMC es:"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnCalculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#4CAF50"
+            android:textColorHint="#4CAF50"
+            android:textColorLink="#23BD29" />
+
+        <Button
+            android:id="@+id/btnLimpio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpiar"
+            android:textAllCaps="true" />
+
+        <Button
+            android:id="@+id/btnRegreso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regresar"
+            android:textAllCaps="true" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
